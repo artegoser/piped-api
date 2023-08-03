@@ -1,6 +1,6 @@
 # Piped API
 
-This is the API wrapper for Piped in Node.js (Typescript).
+This is the API wrapper for [Piped](https://github.com/TeamPiped/Piped) in Node.js (Typescript).
 
 ## Installation
 
