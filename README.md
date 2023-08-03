@@ -13,7 +13,7 @@ npm i piped-api
 ```typescript
 import { PipedAPI } from "piped-api";
 
-const api = new PipedApi("https://ytapi.dc09.ru");
+const api = new PipedAPI("https://ytapi.dc09.ru");
 
 let trending = await api.trending("US");
 
