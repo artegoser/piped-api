@@ -89,6 +89,9 @@ export interface Video {
   uploaderVerified: boolean;
   url: string;
   views: number;
+  isShort: boolean;
+  uploaded: number;
+  shortDescription: string;
 }
 
 export interface Channel {
