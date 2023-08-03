@@ -11,7 +11,7 @@ npm i piped-api
 ## Usage
 
 ```typescript
-import { PipedApi } from "piped-api";
+import { PipedAPI } from "piped-api";
 
 const api = new PipedApi("https://ytapi.dc09.ru");
 
