@@ -87,6 +87,7 @@ export interface Video {
   uploaderAvatar: string;
   uploaderUrl: string;
   uploaderVerified: boolean;
+  uploaderName: string;
   url: string;
   views: number;
   isShort: boolean;
