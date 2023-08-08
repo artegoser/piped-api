@@ -1,4 +1,4 @@
-import got from "got";
+import axios from "axios";
 import {
   Channel,
   Comments,
@@ -24,8 +24,8 @@ export class PipedAPI {
    * @return {Promise<any>} - A Promise that resolves to the parsed JSON data.
    */
   private async _get(url: string) {
-    const data = await got.get(`${this.host}${url}`);
-    return JSON.parse(data.body);
+    const data = await axios.get(`${this.host}${url}`);
+    return data.data;
   }
 
   /**
