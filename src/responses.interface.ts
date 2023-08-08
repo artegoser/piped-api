@@ -92,6 +92,7 @@ export interface Video {
   isShort: boolean;
   uploaded: number;
   shortDescription: string;
+  type?: string;
 }
 
 export interface Channel {
@@ -104,6 +105,7 @@ export interface Channel {
   relatedStreams: Video[];
   subscriberCount: number;
   verified: boolean;
+  type?: string;
 }
 
 export interface NextPageChannel {
@@ -140,4 +142,11 @@ export interface Segments {
   category: string;
   segment: string;
   videoDuration: number;
+}
+
+export interface Search {
+  nextpage: string;
+  items: (Video | Channel)[];
+  corrected: boolean;
+  suggestion: string | null;
 }

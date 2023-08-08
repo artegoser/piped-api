@@ -5,6 +5,7 @@ import {
   NextPageChannel,
   NextPagePlaylist,
   Playlist,
+  Search,
   Sponsors,
   Streams,
   Video,
@@ -136,5 +137,16 @@ export class PipedAPI {
     return await this._get(
       `/sponsors/${id}?category=${JSON.stringify(category)}`
     );
+  }
+
+  /**
+   * Searches videos for a given query with an optional filter.
+   *
+   * @param {string} query - The query to search for.
+   * @param {string} [filter="all"] - The optional filter to apply.
+   * @returns {Promise<Search>} - A Promise that resolves to the search results.
+   */
+  async search(query: string, filter: string = "all"): Promise<Search> {
+    return await this._get(`/search?q=${query}&filter=${filter}`);
   }
 }
