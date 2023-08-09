@@ -147,7 +147,9 @@ export interface Segments {
 
 export interface Search {
   nextpage: string;
-  items: (Video | Channel)[];
+  items: Item[];
   corrected: boolean;
   suggestion: string | null;
 }
+
+export type Item = Video | Channel;

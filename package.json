@@ -1,6 +1,6 @@
 {
   "name": "piped-api",
-  "version": "1.1.2",
+  "version": "1.1.4",
   "description": "",
   "main": "dist/index.js",
   "type": "module",
@@ -14,7 +14,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
     "docs": "typedoc src/index.ts",
-    "prepublishOnly": "npm run build && npm run docs"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "api",
