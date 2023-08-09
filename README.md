@@ -2,6 +2,8 @@
 
 This is the API wrapper for [Piped](https://github.com/TeamPiped/Piped) in Node.js (Typescript).
 
+[Docs](https://artegoser.github.io/piped-api/)
+
 ## Installation
 
 ```bash
