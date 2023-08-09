@@ -13,7 +13,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "docs": "typedoc src/index.ts",
+    "prepublishOnly": "npm run build && npm run docs"
   },
   "keywords": [
     "api",
@@ -35,6 +36,7 @@
     "@typescript-eslint/parser": "^6.2.1",
     "eslint": "^8.46.0",
     "ts-node": "^10.9.1",
+    "typedoc": "^0.24.8",
     "typescript": "^5.1.6"
   },
   "dependencies": {
