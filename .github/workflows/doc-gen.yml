@@ -2,24 +2,21 @@ name: Deploy docs
 on:
   push:
     branches: [main]
-
+permissions:
+  contents: write
 jobs:
   deploy:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: 14.x
+        uses: actions/checkout@v3
       - name: Install dependencies
         run: npm i
       - name: Build docs
         run: npm run docs
       - name: Deploy docs
-        uses: JamesIves/github-pages-deploy-action@4.1.9
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: docs
