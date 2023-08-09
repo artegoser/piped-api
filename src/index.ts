@@ -8,6 +8,7 @@ import {
   Search,
   Sponsors,
   Streams,
+  Tab,
   Video,
 } from "./types";
 
@@ -75,6 +76,10 @@ export class PipedAPI {
     return nextpage
       ? await this._get(`/nextpage/channel/${id}?nextpage=${nextpage}`)
       : await this._get(`/channel/${id}`);
+  }
+
+  async channelTabs(data: string): Promise<Tab> {
+    return await this._get(`/channels/tabs/?data=${data}`);
   }
 
   /**

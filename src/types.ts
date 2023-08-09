@@ -102,12 +102,25 @@ export interface Channel {
   description: string;
   id: string;
   name: string;
+  tabs: TabInfo[];
   nextpage: string;
   relatedStreams: Video[];
   subscriberCount: number;
   verified: boolean;
   type?: string;
 }
+
+export interface TabInfo {
+  name: string;
+  data: string;
+}
+
+export interface Tab {
+  nextpage: string;
+  content: TabResp[];
+}
+
+export type TabResp = Video | Channel | Playlist;
 
 export interface NextPageChannel {
   nextpage: string;
@@ -124,6 +137,7 @@ export interface Playlist {
   uploaderAvatar: string;
   uploaderUrl: string;
   videos: number;
+  type?: string;
 }
 
 export interface NextPagePlaylist {
