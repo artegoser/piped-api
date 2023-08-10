@@ -128,16 +128,22 @@ export interface NextPageChannel {
 }
 
 export interface Playlist {
+  url: string;
   bannerUrl: string;
   name: string;
   nextpage: string;
   relatedStreams: Video[];
-  thumbnailUrl: string;
-  uploader: string;
+  thumbnailUrl?: string;
+  uploader?: string;
   uploaderAvatar: string;
   uploaderUrl: string;
   videos: number;
+
   type?: string;
+  thumbnail?: string;
+  uploaderName?: string;
+  uploaderVerified?: boolean;
+  playlistType?: string;
 }
 
 export interface NextPagePlaylist {
