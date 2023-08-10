@@ -176,4 +176,4 @@ export interface Search {
   suggestion: string | null;
 }
 
-export type Item = Video | Channel;
+export type Item = Video | Channel | Playlist;
