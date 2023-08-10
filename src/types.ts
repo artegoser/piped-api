@@ -107,7 +107,11 @@ export interface Channel {
   relatedStreams: Video[];
   subscriberCount: number;
   verified: boolean;
+
   type?: string;
+  url?: string;
+  thumbnail?: string;
+  videos?: number;
 }
 
 export interface TabInfo {
