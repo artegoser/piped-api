@@ -21,7 +21,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">Playlist</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L130">types.ts:130</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L130">types.ts:130</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -32,12 +32,17 @@
 <div class="tsd-index-list"><a href="types.Playlist.html#bannerUrl" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>banner<wbr/>Url</span></a>
 <a href="types.Playlist.html#name" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a>
 <a href="types.Playlist.html#nextpage" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>nextpage</span></a>
+<a href="types.Playlist.html#playlistType" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>playlist<wbr/>Type?</span></a>
 <a href="types.Playlist.html#relatedStreams" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>related<wbr/>Streams</span></a>
-<a href="types.Playlist.html#thumbnailUrl" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>thumbnail<wbr/>Url</span></a>
+<a href="types.Playlist.html#thumbnail" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>thumbnail?</span></a>
+<a href="types.Playlist.html#thumbnailUrl" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>thumbnail<wbr/>Url?</span></a>
 <a href="types.Playlist.html#type" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type?</span></a>
-<a href="types.Playlist.html#uploader" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader</span></a>
+<a href="types.Playlist.html#uploader" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader?</span></a>
 <a href="types.Playlist.html#uploaderAvatar" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Avatar</span></a>
+<a href="types.Playlist.html#uploaderName" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Name?</span></a>
 <a href="types.Playlist.html#uploaderUrl" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Url</span></a>
+<a href="types.Playlist.html#uploaderVerified" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Verified?</span></a>
+<a href="types.Playlist.html#url" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>url</span></a>
 <a href="types.Playlist.html#videos" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>videos</span></a>
 </div></section></div></details></section></section>
 <section class="tsd-panel-group tsd-member-group">
@@ -46,52 +51,77 @@
 <h3 class="tsd-anchor-link"><span>banner<wbr/>Url</span><a href="#bannerUrl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><g stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" id="icon-anchor"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"></path><path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"></path></g></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">banner<wbr/>Url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L131">types.ts:131</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L132">types.ts:132</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="name" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>name</span><a href="#name" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">name</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L132">types.ts:132</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L133">types.ts:133</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="nextpage" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>nextpage</span><a href="#nextpage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">nextpage</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L133">types.ts:133</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L134">types.ts:134</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="playlistType" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>playlist<wbr/>Type</span><a href="#playlistType" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">playlist<wbr/>Type</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L146">types.ts:146</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="relatedStreams" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>related<wbr/>Streams</span><a href="#relatedStreams" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">related<wbr/>Streams</span><span class="tsd-signature-symbol">:</span> <a href="types.Video.html" class="tsd-signature-type tsd-kind-interface">Video</a><span class="tsd-signature-symbol">[]</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L134">types.ts:134</a></li></ul></aside></section>
-<section class="tsd-panel tsd-member"><a id="thumbnailUrl" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>thumbnail<wbr/>Url</span><a href="#thumbnailUrl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">thumbnail<wbr/>Url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L135">types.ts:135</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="thumbnail" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>thumbnail</span><a href="#thumbnail" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">thumbnail</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L135">types.ts:135</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L143">types.ts:143</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="thumbnailUrl" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>thumbnail<wbr/>Url</span><a href="#thumbnailUrl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">thumbnail<wbr/>Url</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L136">types.ts:136</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="type" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>type</span><a href="#type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">type</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L140">types.ts:140</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L142">types.ts:142</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="uploader" class="tsd-anchor"></a>
-<h3 class="tsd-anchor-link"><span>uploader</span><a href="#uploader" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
-<div class="tsd-signature"><span class="tsd-kind-property">uploader</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>uploader</span><a href="#uploader" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">uploader</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L136">types.ts:136</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L137">types.ts:137</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="uploaderAvatar" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>uploader<wbr/>Avatar</span><a href="#uploaderAvatar" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">uploader<wbr/>Avatar</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L137">types.ts:137</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L138">types.ts:138</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="uploaderName" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>uploader<wbr/>Name</span><a href="#uploaderName" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">uploader<wbr/>Name</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L144">types.ts:144</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="uploaderUrl" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>uploader<wbr/>Url</span><a href="#uploaderUrl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">uploader<wbr/>Url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L138">types.ts:138</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L139">types.ts:139</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="uploaderVerified" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>uploader<wbr/>Verified</span><a href="#uploaderVerified" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">uploader<wbr/>Verified</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L145">types.ts:145</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="url" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><span>url</span><a href="#url" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L131">types.ts:131</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="videos" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>videos</span><a href="#videos" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">videos</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/5465963/src/types.ts#L139">types.ts:139</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/artegoser/piped-api/blob/963be51/src/types.ts#L140">types.ts:140</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -114,12 +144,17 @@
 <li><a href="#bannerUrl" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>banner<wbr/>Url</span></a></li>
 <li><a href="#name" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>name</span></a></li>
 <li><a href="#nextpage" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>nextpage</span></a></li>
+<li><a href="#playlistType" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>playlist<wbr/>Type</span></a></li>
 <li><a href="#relatedStreams" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>related<wbr/>Streams</span></a></li>
+<li><a href="#thumbnail" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>thumbnail</span></a></li>
 <li><a href="#thumbnailUrl" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>thumbnail<wbr/>Url</span></a></li>
 <li><a href="#type" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>type</span></a></li>
 <li><a href="#uploader" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader</span></a></li>
 <li><a href="#uploaderAvatar" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Avatar</span></a></li>
+<li><a href="#uploaderName" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Name</span></a></li>
 <li><a href="#uploaderUrl" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Url</span></a></li>
+<li><a href="#uploaderVerified" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>uploader<wbr/>Verified</span></a></li>
+<li><a href="#url" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>url</span></a></li>
 <li><a href="#videos" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>videos</span></a></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>piped-<wbr/>api</span></a>
